@@ -1,0 +1,104 @@
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial
+$ git init
+Initialized empty Git repository in F:/Git tutorial/.git/
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        exel.xlsx
+        first.txt
+        testing.rtf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git add --a
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   exel.xlsx
+        new file:   first.txt
+        new file:   testing.rtf
+
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) cacf3b9] Initial Commit
+ 3 files changed, 2 insertions(+)
+ create mode 100644 exel.xlsx
+ create mode 100644 first.txt
+ create mode 100644 testing.rtf
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git log
+commit cacf3b921abd1dc10dbc6ce598131e31dd23731c (HEAD -> master)
+Author: Dayananda <dayanandabn.bgt24mtr11@ieee.org>
+Date:   Sat Dec 17 01:53:41 2022 +0530
+
+    Initial Commit
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   exel.xlsx
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git add first.txt
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   exel.xlsx
+
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git commit -m "Changed first.txt and added better design"
+[master bfdc1cf] Changed first.txt and added better design
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   exel.xlsx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dayananda@DESKTOP-EHA7B1H MINGW64 /f/Git tutorial (master)
+$
